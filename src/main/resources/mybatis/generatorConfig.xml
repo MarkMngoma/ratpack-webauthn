@@ -3,7 +3,7 @@
   "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-    
+
   <context id="simple" targetRuntime="MyBatis3">
     <commentGenerator>
       <property name="suppressDate" value="true"/>
@@ -11,8 +11,8 @@
     </commentGenerator>
 
     <jdbcConnection driverClass="org.mariadb.jdbc.Driver"
-                    userId="dboWoopayWallet" password="rJlsFzq+XcmC1kAeSRDG=="
-                    connectionURL="jdbc:mariadb://localhost:13306/dboWoopayWallet">
+                    userId="dboSecurity" password="mdn9VBYldGcmLo01lt5Y3lpQqeE="
+                    connectionURL="jdbc:mariadb://localhost:63306/dboSecurity">
     </jdbcConnection>
 
     <javaModelGenerator
@@ -29,10 +29,10 @@
                          targetPackage="za.co.ratpack.webauthn.reactive.domain.mybatis.dao"
                          targetProject="./src/main/java"/>
 
-    <table tableName="CURRENCIES" enableCountByExample="false"
+    <table tableName="SEC_CREDENTIALS" enableCountByExample="false"
            enableDeleteByExample="false" enableSelectByExample="false"
            enableUpdateByExample="false" enableSelectByPrimaryKey="false"
            selectByExampleQueryId="false" selectByPrimaryKeyQueryId="false"
-           mapperName="FinanceDao" schema="dboWoopayWallet"/>
+           mapperName="QuerySecCredentialsDao" schema="dboSecurity"/>
   </context>
 </generatorConfiguration>
