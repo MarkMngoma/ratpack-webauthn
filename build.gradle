@@ -1,5 +1,3 @@
-import org.codehaus.groovy.runtime.GStringImpl
-
 buildscript {
   repositories {
     gradlePluginPortal()
@@ -25,6 +23,8 @@ plugins {
 apply plugin: 'com.github.johnrengelman.shadow'
 apply plugin: "java"
 apply plugin: 'application'
+
+apply from: "${projectDir}/src/gradle/scripts/mybatis.gradle"
 
 group = 'za.co.ratpack.webauthn.reactive'
 description = 'A Java boilerplate reactive webauthn server using Google Guice'
@@ -126,4 +126,3 @@ shadowJar {
 test {
   useJUnitPlatform()
 }
-
