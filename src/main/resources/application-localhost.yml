@@ -15,7 +15,7 @@ jdbc:
   connectionTimeoutMs: 30000
   idleTimeoutMs: 600000
   maxLifetimeMs: 18000000
-  mapperPackage: za.co.ratpack.finance.reactive.domain.mybatis.dao
+  mapperPackage: za.co.ratpack.webauthn.reactive.domain.mybatis.dao
   flywaySchema: dboSecurity
   migrationsTable: MIGRATION_SCHEMAS_HISTORY
   validateOnMigrationNaming: true
