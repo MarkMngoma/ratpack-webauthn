@@ -62,9 +62,7 @@ dependencies {
   // Security Dependencies
   implementation "com.webauthn4j:webauthn4j-core:${webauthn4jVersion}"
   implementation "com.webauthn4j:webauthn4j-appattest:${webauthn4jVersion}"
-  implementation "org.pac4j:pac4j-jwt:${pac4jVersion}"
-  implementation "org.pac4j:pac4j-core:${pac4jVersion}"
-  implementation "org.pac4j:pac4j-http:${pac4jVersion}"
+  implementation "com.auth0:java-jwt:${javaJwtVersion}"
 
   // Utility Dependencies
   implementation "org.apache.commons:commons-lang3:${apacheCommonsLang3Version}"

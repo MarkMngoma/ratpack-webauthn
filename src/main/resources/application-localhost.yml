@@ -24,3 +24,7 @@ jdbc:
   cleanDisabled: true
   baselineOnMigrate: true
   migrationLocation: db/migration
+attestation:
+  issuer: 'Security Authority'
+  expirationTime: 900000
+  secret: '6yFnLgisYlYfg/p3uNZ/aFlg/d0='
