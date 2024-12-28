@@ -29,10 +29,10 @@
                          targetPackage="za.co.ratpack.webauthn.reactive.domain.mybatis.dao"
                          targetProject="./src/main/java"/>
 
-    <table tableName="SEC_CREDENTIALS" enableCountByExample="false"
+    <table tableName="SEC_WEB_AUTHN_CREDENTIALS" enableCountByExample="false"
            enableDeleteByExample="false" enableSelectByExample="false"
            enableUpdateByExample="false" enableSelectByPrimaryKey="false"
            selectByExampleQueryId="false" selectByPrimaryKeyQueryId="false"
-           mapperName="QuerySecCredentialsDao" schema="dboSecurity"/>
+           mapperName="QuerySecWebAuthnCredentialsDao" schema="dboSecurity"/>
   </context>
 </generatorConfiguration>
