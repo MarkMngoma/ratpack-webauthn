@@ -1,0 +1,60 @@
+openapi: 3.0.3
+info:
+  title: reactive-webauthn
+  version: 1.0.0
+  contact: {}
+servers:
+  - url: https://localhost:5051
+paths:
+  /v1/WriteAuthenticationResource:
+    post:
+      tags:
+        - V1
+      summary: /v1/WriteAuthenticationResource
+      description: /v1/WriteAuthenticationResource
+      operationId: v1WriteAuthenticationResource
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+
+            examples:
+              /v1/WriteAuthenticationResource:
+
+      responses:
+        '200':
+          description: ''
+  /v1/QueryChallengeResource:
+    get:
+      tags:
+        - V1
+      summary: /v1/QueryChallengeResource
+      description: /v1/QueryChallengeResource
+      operationId: v1QueryChallengeResource
+      responses:
+        '200':
+          description: ''
+
+  /v1/WriteRegistrationResource:
+    post:
+      tags:
+        - V1
+      summary: /v1/WriteRegistrationResource
+      description: /v1/WriteRegistrationResource
+      operationId: v1WriteRegistrationResource
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+
+            examples:
+              /v1/WriteRegistrationResource:
+                value:
+
+      responses:
+        '200':
+          description: ''
+tags:
+  - name: V1
